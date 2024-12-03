@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32023EF4-57AD-4B9A-8BCD-FF2E9409E86C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_Purchase</RootNamespace>
+    <AssemblyName>e_Purchase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\packages\packages\Bunifu_UI_WinForms_1.11.5.1\lib\net45\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="e_purchaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>e_purchaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbilling.Designer.cs">
+      <DependentUpon>frmbilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcompany.Designer.cs">
+      <DependentUpon>frmcompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmedit.Designer.cs">
+      <DependentUpon>frmedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfixedprice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfixedprice.Designer.cs">
+      <DependentUpon>frmfixedprice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhome.Designer.cs">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmloadinv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloadinv.Designer.cs">
+      <DependentUpon>frmloadinv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmorder.Designer.cs">
+      <DependentUpon>frmorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpurchase.Designer.cs">
+      <DependentUpon>frmpurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsrdsr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsrdsr.Designer.cs">
+      <DependentUpon>frmsrdsr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstock.Designer.cs">
+      <DependentUpon>frmstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstockchalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstockchalan.Designer.cs">
+      <DependentUpon>frmstockchalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtrade.Designer.cs">
+      <DependentUpon>frmtrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbilling.resx">
+      <DependentUpon>frmbilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcompany.resx">
+      <DependentUpon>frmcompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmedit.resx">
+      <DependentUpon>frmedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfixedprice.resx">
+      <DependentUpon>frmfixedprice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhome.resx">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloadinv.resx">
+      <DependentUpon>frmloadinv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmorder.resx">
+      <DependentUpon>frmorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpurchase.resx">
+      <DependentUpon>frmpurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsrdsr.resx">
+      <DependentUpon>frmsrdsr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstock.resx">
+      <DependentUpon>frmstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstockchalan.resx">
+      <DependentUpon>frmstockchalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtrade.resx">
+      <DependentUpon>frmtrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="e_purchaseDataSet.xsc">
+      <DependentUpon>e_purchaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="e_purchaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>e_purchaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="e_purchaseDataSet.xss">
+      <DependentUpon>e_purchaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human-resources_7870947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work_14024764.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homechart-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-stock-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-stock-221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-purchase-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-order-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homechart-201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-offer-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medium-new-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-user-male-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sell-stock-222.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
